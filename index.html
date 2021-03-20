@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Acordeon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <div class="content">
+    <p class="subtitle"><strong>Título: </strong> Acordeon</p>
+    <h1 class="title">Fecha: </h1>
+    <hr/>
+    <section class="section">
+      <h3>1er Acordeon</h3>
+     <accordion id="accordion-example-1" :content="example1" multiple="multiple"></accordion>
+    </section>
+
+    <section class="section">
+      <h3>2do Acordeon</h3>
+      <accordion id="accordion-example-2" :content="example2" multiple="multiple"></accordion>
+    </section>
+    
+    <section class="section">
+      <h3>3er Acordeon</h3>
+      <accordion id="accordion-example-3" :content="example3" multiple="multiple"></accordion>
+    </section>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.15/vue.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
